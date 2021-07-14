@@ -7,7 +7,7 @@ async function sendComment(post: Post) {
     body: JSON.stringify(post),
   };
   const response = await fetch(
-    `http://localhost:8080/posts/${post.id}`,
+    `http://localhost:3333/posts/${post.id}`,
     options
   );
   const newPost = await response.json();

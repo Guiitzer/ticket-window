@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { PATHS } from "../config/paths";
 import Feed from "./pages/Feed";
 import Login from "./pages/Login";
+import Socket from "./pages/Socket";
 
 function Routes() {
   return (
@@ -19,6 +20,10 @@ function Routes() {
 
         <Route path={PATHS.FEED}>
           <Feed />
+        </Route>
+
+        <Route path={`/socket`}>
+          <Socket />
         </Route>
 
         <Route>

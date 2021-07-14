@@ -1,5 +1,5 @@
 async function getPosts() {
-  const response = await fetch(`http://localhost:8080/posts`);
+  const response = await fetch(`http://localhost:3333/posts`);
   const user = await response.json();
 
   return user;
