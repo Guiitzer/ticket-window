@@ -1,0 +1,16 @@
+.area-container{
+  height: 100vh;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr) ;
+  justify-items:center;
+  align-items: center;
+}
+
+.container{
+  background-color: aqua;
+  width:50%;
+  height: 15vw;
+  border: 1px solid rgb(255, 252, 252);
+  display: flex;
+ 
+}

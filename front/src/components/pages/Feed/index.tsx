@@ -9,7 +9,7 @@ function Feed() {
   const user = useAppSelector((state) => state.login.user);
 
   if (!user) {
-    return <Redirect to={PATHS.LOGIN} />;
+    return <Redirect to={PATHS.ROOT} />;
   }
 
   return (

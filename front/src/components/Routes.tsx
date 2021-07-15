@@ -2,28 +2,38 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { PATHS } from "../config/paths";
+import Container from "./layout/Container";
 import Feed from "./pages/Feed";
-import Login from "./pages/Login";
-import Socket from "./pages/Socket";
+import '../assets/css/container.css';
 
 function Routes() {
   return (
     <Router>
       <Switch>
         <Route exact={true} path={PATHS.ROOT}>
-          <h1>Root</h1>
+          <div className="area-container">
+          <Container name="Emissão de Pedidos" link="emissaopedidos" />
+          <Container name="Gerenciamento de Pedidos" link="gerenciapedidos" />
+          <Container name="Visualização de Pedidos" link="visualizapedidos" />
+          </div>
         </Route>
 
-        <Route path={PATHS.LOGIN}>
-          <Login />
+        <Route path={PATHS.EMISSAO}>
+          <div className="area-container">
+          <Container name="Tela de Emissão de Pedidos" />
+          </div>
         </Route>
 
-        <Route path={PATHS.FEED}>
-          <Feed />
+        <Route path={PATHS.GERENCIA}>
+          <div className="area-container">
+          <Container name="Tela de Gerenciamento de Pedidos" />
+          </div>
         </Route>
 
-        <Route path={`/socket`}>
-          <Socket />
+        <Route path={PATHS.VISUALIZA}>
+          <div className="area-container">
+          <Container name="Tela de Visualização de Pedidos" />
+          </div>
         </Route>
 
         <Route>

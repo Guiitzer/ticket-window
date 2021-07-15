@@ -9,7 +9,7 @@ import Header from "./layout/Header";
 function App() {
   return (
     <Provider store={store}>
-      <Header />
+      {/* <Header /> */}
       <main>
         <Routes />
       </main>
