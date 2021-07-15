@@ -1,5 +1,6 @@
 export const PATHS = {
   ROOT: "/",
-  LOGIN: "/login",
-  FEED: "/feed",
+  EMISSAOPEDIDOS: "/emissao",
+  GERENCIAPEDIDOS: "/gerencia",
+  VISUALIZAPEDIDOS: "/visualiza",
 };

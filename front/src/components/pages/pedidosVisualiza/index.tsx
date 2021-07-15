@@ -5,11 +5,11 @@ import { useAppSelector } from "../../../redux/configureStore";
 import Posts from "./Posts";
 import ProfileSidebar from "./ProfileSidebar";
 
-function Feed() {
+function PedidosVisualiza() {
   const user = useAppSelector((state) => state.login.user);
 
   if (!user) {
-    return <Redirect to={PATHS.LOGIN} />;
+    return <Redirect to={PATHS.ROOT} />;
   }
 
   return (
@@ -20,4 +20,4 @@ function Feed() {
   );
 }
 
-export default Feed;
+export default PedidosVisualiza;

@@ -23,7 +23,7 @@ function Login() {
   }
 
   if (loginState.user) {
-    return <Redirect to={PATHS.FEED} />;
+    return <Redirect to={PATHS.ROOT} />;
   }
 
   return (
