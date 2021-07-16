@@ -26,7 +26,15 @@ function PedidosGerencia() {
   //   return <Redirect to={PATHS.ROOT} />;
   // }
 
-  return <h1>PedidosGerencia</h1>;
+  return (
+    <>
+      <h1>CONTEUDO DA PAGINA GERENCIAMENTO DE PEDIDOS</h1>
+      <dl>
+        <dd>Exibição de todos os pedidos</dd>
+        <dd>Controle (conclusão de entrega) de pedidos</dd>
+      </dl>
+    </>
+  );
 }
 
 export default PedidosGerencia;

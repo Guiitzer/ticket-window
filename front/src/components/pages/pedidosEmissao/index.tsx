@@ -5,6 +5,7 @@ import { ReactComponent as GithubLogo } from "../../../assets/img/github-logo.sv
 import { PATHS } from "../../../config/paths";
 import { useAppDispatch, useAppSelector } from "../../../redux/configureStore";
 import { getGithubUserApi } from "../../../redux/reducers/loginReducer";
+import FloatingActionButtonSize from "../../shared/FAB";
 
 function PedidosEmissao() {
   const dispatch = useAppDispatch();
@@ -26,7 +27,18 @@ function PedidosEmissao() {
     return <Redirect to={PATHS.ROOT} />;
   }
 
-  return <h1>PedidosEmissao</h1>;
+  return (
+    <>
+      <h1>CONTEUDO DA PAGINA EMISSÃO DE PEDIDOS</h1>
+      <ul>
+        <li>Lista de pedidos</li>
+        <li>Nome do Motoboy</li>
+        <li>Numero do Pedido</li>
+        <li>Plataforma</li>
+        <FloatingActionButtonSize />
+      </ul>
+    </>
+  );
 }
 
 export default PedidosEmissao;

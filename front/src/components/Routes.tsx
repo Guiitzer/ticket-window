@@ -28,12 +28,12 @@ export default function Routes() {}
 //         </Route>
 
 //         <Route exact={true} path={PATHS.VISUALIZAPEDIDOS}>
-//           <h1>CONTEUDO DA PAGINA VIZUALIZAÇÃO DE PEDIDOS</h1>
-//           <ul>
-//             <li>Exibição de todos os pedidos prontos para retirada</li>
-//             <li>Chamada do pedido pronto para retirada</li>
-//             <li>RE-chamada a cada 2 minutos do pedido pronto para retirada</li>
-//           </ul>
+// <h1>CONTEUDO DA PAGINA VIZUALIZAÇÃO DE PEDIDOS</h1>
+// <ul>
+//   <li>Exibição de todos os pedidos prontos para retirada</li>
+//   <li>Chamada do pedido pronto para retirada</li>
+//   <li>RE-chamada a cada 2 minutos do pedido pronto para retirada</li>
+// </ul>
 //         </Route>
 
 //         <Route exact={true} path={`/socket`}>
