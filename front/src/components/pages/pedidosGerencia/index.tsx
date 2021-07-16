@@ -6,53 +6,27 @@ import { PATHS } from "../../../config/paths";
 import { useAppDispatch, useAppSelector } from "../../../redux/configureStore";
 import { getGithubUserApi } from "../../../redux/reducers/loginReducer";
 
-function Login() {
-  const dispatch = useAppDispatch();
+function PedidosGerencia() {
+  // const dispatch = useAppDispatch();
 
-  const loginState = useAppSelector((state) => state.login);
-  const [inputText, setInputText] = React.useState("");
+  // const loginState = useAppSelector((state) => state.login);
+  // const [inputText, setInputText] = React.useState("");
 
-  function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
-    const value = event.target.value;
-    setInputText(value);
-  }
+  // function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
+  //   const value = event.target.value;
+  //   setInputText(value);
+  // }
 
-  function handleClick() {
-    console.log("botão login clicado");
-    dispatch(getGithubUserApi(inputText));
-  }
+  // function handleClick() {
+  //   console.log("botão login clicado");
+  //   dispatch(getGithubUserApi(inputText));
+  // }
 
-  if (loginState.user) {
-    return <Redirect to={PATHS.ROOT} />;
-  }
+  // if (loginState.user) {
+  //   return <Redirect to={PATHS.ROOT} />;
+  // }
 
-  return (
-    <section className="login">
-      <div className="login-box">
-        <div className="github-logo">
-          <GithubLogo />
-        </div>
-
-        {loginState.status === "loading" && <span>Carregando</span>}
-        {loginState.status === "error" && <span>Algo deu errado</span>}
-
-        <input
-          className="github-input"
-          type="text"
-          placeholder="Type your GitHub user"
-          onChange={handleChange}
-          value={inputText}
-        />
-        <button
-          className="github-button"
-          onClick={handleClick}
-          disabled={!inputText || loginState.status === "loading"}
-        >
-          Login
-        </button>
-      </div>
-    </section>
-  );
+  return <h1>PedidosGerencia</h1>;
 }
 
-export default Login;
+export default PedidosGerencia;

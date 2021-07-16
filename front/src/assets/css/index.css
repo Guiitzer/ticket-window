@@ -1,13 +1,13 @@
-@import 'https://fonts.googleapis.com/css?family=Varela+Round';
+@import "https://fonts.googleapis.com/css?family=Varela+Round";
 
-@import './variables.css';
-@import './header.css';
-@import './login.css';
-@import './feed.css';
-@import './posts.css';
-@import './post.css';
-@import './profile.css';
-@import './typing.css';
+@import "./variables.css";
+@import "./header.css";
+@import "./login.css";
+@import "./feed.css";
+@import "./posts.css";
+@import "./post.css";
+@import "./profile.css";
+@import "./typing.css";
 
 * {
   box-sizing: border-box;
@@ -18,9 +18,9 @@
 html,
 body {
   font-size: 16px;
-  font-family: 'Varela Round';
+  font-family: "Varela Round";
   color: var(--base-light);
-  background-color: var(--base-dark);
+  background-color: #d1d1d1;
 }
 
 @media (max-width: 600px) {

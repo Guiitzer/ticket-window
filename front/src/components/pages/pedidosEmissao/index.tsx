@@ -26,33 +26,7 @@ function PedidosEmissao() {
     return <Redirect to={PATHS.ROOT} />;
   }
 
-  return (
-    <section className="login">
-      <div className="login-box">
-        <div className="github-logo">
-          <GithubLogo />
-        </div>
-
-        {loginState.status === "loading" && <span>Carregando</span>}
-        {loginState.status === "error" && <span>Algo deu errado</span>}
-
-        <input
-          className="github-input"
-          type="text"
-          placeholder="Type your GitHub user"
-          onChange={handleChange}
-          value={inputText}
-        />
-        <button
-          className="github-button"
-          onClick={handleClick}
-          disabled={!inputText || loginState.status === "loading"}
-        >
-          Login
-        </button>
-      </div>
-    </section>
-  );
+  return <h1>PedidosEmissao</h1>;
 }
 
 export default PedidosEmissao;

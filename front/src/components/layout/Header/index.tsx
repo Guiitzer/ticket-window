@@ -6,11 +6,12 @@ import {
   FaPinterest,
   FaBeer,
 } from "react-icons/fa";
+import Sidebar from "../Sidebar/SideBar";
 
 function Header() {
   return (
     <h3>
-      Lets go for a <FaBeer />?
+      <Sidebar />
     </h3>
   );
 }

@@ -6,18 +6,7 @@ import Posts from "./Posts";
 import ProfileSidebar from "./ProfileSidebar";
 
 function PedidosVisualiza() {
-  const user = useAppSelector((state) => state.login.user);
-
-  if (!user) {
-    return <Redirect to={PATHS.ROOT} />;
-  }
-
-  return (
-    <section className="feed">
-      <Posts />
-      <ProfileSidebar />
-    </section>
-  );
+  return <h1>PedidosVisualiza</h1>;
 }
 
 export default PedidosVisualiza;
